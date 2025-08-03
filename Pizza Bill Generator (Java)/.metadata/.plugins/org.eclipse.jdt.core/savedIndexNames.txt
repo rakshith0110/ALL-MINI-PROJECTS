@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+E:\INTERNSHIP 2025\JAVA Internship - Istudio\Pizza Bill Generator (Java)\.metadata\.plugins\org.eclipse.jdt.core
+3520599801.index
+1865797976.index
+3166615654.index

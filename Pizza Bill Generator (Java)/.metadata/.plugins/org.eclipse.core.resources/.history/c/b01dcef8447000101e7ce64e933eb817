@@ -1,0 +1,34 @@
+package bill;
+
+public class DeluxPizza extends Pizza {
+
+    /**
+     * Constructor for a Delux pizza.
+     * It automatically adds extra cheese and toppings by default.
+     * @param isVeg true for a vegetarian Delux pizza, false otherwise.
+     */
+    public DeluxPizza(boolean isVeg) {
+        // Calls the parent constructor to set the base pizza type
+        super(isVeg);
+        
+        // Delux pizzas come with extra cheese and toppings included
+        super.addExtraCheese();
+        super.addExtraToppings();
+    }
+
+    /**
+     * Overridden to prevent adding extra cheese again, as it's included by default[cite: 12].
+     */
+    @Override
+    public void addExtraCheese() {
+        // Delux Pizza already has extra cheese, so this method does nothing.
+    }
+
+    /**
+     * Overridden to prevent adding extra toppings again, as they're included by default[cite: 12].
+     */
+    @Override
+    public void addExtraToppings() {
+        // Delux Pizza already has extra toppings, so this method does nothing.
+    }
+}
