@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voter Adding</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <style>
+        .headerFont {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 24px;
+        }
+        .subFont {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+        }
+        .specialHead {
+            font-family: 'Oswald', sans-serif;
+        }
+        .normalFont {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .container {
+            padding-top: 70px;
+        }
+        .form-container {
+            border: 2px solid #ccc;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn-default {
+            background-color: #fff;
+            border-color: #ccc;
+            font-weight: bold;
+        }
+        .btn-default:hover {
+            background-color: #f2f2f2;
+            border-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand headerFont text-lg"><strong>MANGALORE E-MATDAAN </strong></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 form-container">
+                <div class="page-header">
+                    <h2 class="specialHead">Add New Voter</h2>
+                    <p class="normalFont">Verify the authencity before adding</p>
+                </div>
+
+                <form action="add_voter.php" method="POST">
+                    <div class="form-group">
+                        <label for="voterName">Voter's Name:</label>
+                        <input type="text" id="voterName" name="voterName" pattern="[A-Za-z]{4,}" title="Enter voter's full name" placeholder="Enter voter's full name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="voterEmail">Voter's Registered Email ID:</label>
+                        <input type="email" id="voterEmail" name="voterEmail" placeholder="Enter voter's email ID" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="voterID">Voter's Card No.:</label>
+                        <input type="text" id="voterID" name="voterID" pattern="[0-9].{6,}" placeholder="Enter voter's unique voter ID" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Set voter's password" class="form-control" required>
+                    </div>
+
+                    <hr>
+                    <div class="text-center">
+                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-default">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

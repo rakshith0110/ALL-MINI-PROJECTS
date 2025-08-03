@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elections 2024</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: linear-gradient(45deg, #ff7b00, #FFFFFF, #00b600);
+  background-size: 400% 400%;
+  animation: gradientBG 4s ease infinite;
+}
+
+
+.headerFont {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+}
+
+.subFont {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.specialHead {
+  font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron {
+  padding: 50px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features-col {
+  padding: 30px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ccc;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #333;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+}
+
+.jumbotron img {
+  max-width: 100%;
+  height: auto;
+}
+
+.jumbotron h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #006400;
+  border-color: #006400;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.page-header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+}
+
+.features-col img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.features-col h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.features-col p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+}
+
+.footer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation: fadeIn 1s;
+}
+
+.animated-delay {
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s forwards;
+}
+/* Define keyframes for blinking animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Apply blinking animation to the button */
+.btn-blink {
+  animation: blink 2s infinite;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid" style="background-color: #333; color: #fff; padding: 20px 0;">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand headerFont text-lg"><strong>MANGALORE E-MATDAAN 2024</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="nomination.php"><span class="subFont"><strong>Candidates</strong></span></a></li>
+          </ul>
+          <div class="navbar-form navbar-right">
+            <a href="admin.html" class="btn btn-success"><strong>Admin Login</strong></a>
+            <a href="voter_login.html" class="btn btn-success"><strong> Voter Login</strong></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid" style="padding: 50px;">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="jumbotron text-center text-block animated">
+          <img src="images/MAT.png" alt="">
+          <h1 class="specialHead">MANGALORE E-MATDAAN 2024</h1>
+          <p class="normalFont">Safe . Reliable . Secure . Fast </p>
+          <a href="voter_login.html" class="btn btn-primary btn-md specialHead btn-blink"> <span class="glyphicon glyphicon-tag"></span>Vote now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container animated-delay" style="padding: 50px;" id="featuresTab">
+    <div class="row">
+      <div class="col-sm-12 text-center slideInLeft">
+        <div class="page-header" style="padding-top: 50px; padding-bottom: 50px">
+          <h1 class="normalFont" style="font-size: 44px;">WHAT IS MANGALORE E-MATDAAN 2024 ?</h1>
+          <p class="subFont" style="font-size: 24px;">A Interactive Way To Solve Conventional Voting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding: 50px;" id="aboutTab">
+    <div class="row">
+      <div class="col-sm-4 text-center features-col animated-delay">
+        <img src="images/Nominee.png" width="100" height="100" alt="" />
+        <a href="voter_login.html"><h2 class="normalFont" style="color: black">Vote Online</h2></a>
+        <p>You Just Need Basic Details of Yours and We Will Let You Vote.</p>
+      </div>
+      <div class="col-sm-4 text-center features-col animated-delay">
+        <img src="images/Vote.png" width="100" height="100" alt="" />
+        <a href="nomination.html"><h2 class="normalFont" style="color: black">Nomination</h2></a>
+        <p>Admin's Control Panel allows you to manage the list of filled nomination.</p>
+      </div>
+      <div class="col-sm-4 text-center features-col animated-delay">
+        <img src="images/Stats.png" width="100" height="100" alt="" />
+        <h2 class="normalFont" style="color: black">Statistics</h2> 
+        <p>Shows You the Graphical Data Representation of your votes. And, It is in Admin's Control Panel.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <footer class="footer text-center animated">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h4 class="specialHead">Project By<br>Rakshith PR<br>Yathish Shetty</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
