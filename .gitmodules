@@ -1,0 +1,3 @@
+[submodule "Pet-care-service"]
+	path = Pet-care-service
+	url = https://github.com/rakshith0110/ALL-MINI-PROJECTS.git
